@@ -6,8 +6,8 @@ int min_func(float a[], int n)
 {
 	float min, step;
 	int i;
-	for (min = a[0], i = 1; i<n; i++)  //初始默认最大值为a[0],遍历数组元素
-	if (min > a[i]) //如果当前最大值<当前数组元素，则将该元素赋值给max
+	for (min = a[0], i = 1; i<n; i++)  //Start from a[0],then loop to find the minimal value
+	if (min > a[i]) //if min is larger than a[i], then change a[i] to be the new min.
 	{
 		min = a[i];
 		step = i;
@@ -20,8 +20,8 @@ int step_func(float a[], int n)
 {
 	float min, step;
 	int i;
-	for (min = a[0], i = 1; i<n; i++)  //初始默认最大值为a[0],遍历数组元素
-	if (min > a[i]) //如果当前最大值<当前数组元素，则将该元素赋值给max
+	for (min = a[0], i = 1; i<n; i++)  //Start from a[0],then loop to find the minimal value
+	if (min > a[i]) //if min is larger than a[i], then change a[i] to be the new min.
 	{
 		min = a[i];
 		step = i;
